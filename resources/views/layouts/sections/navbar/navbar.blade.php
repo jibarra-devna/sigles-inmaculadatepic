@@ -36,8 +36,8 @@ $navbarDetached = ($navbarDetached ?? '');
         <!-- Search -->
         <div class="navbar-nav align-items-center">
           <div class="nav-item d-flex align-items-center">
-            <i class="bx bx-search fs-4 lh-0"></i>
-            <input type="text" class="form-control border-0 shadow-none ps-1 ps-sm-2" placeholder="Search..." aria-label="Search...">
+            <!-- <i class="bx bx-search fs-4 lh-0"></i> -->
+           <!-- <input type="text" class="form-control border-0 shadow-none ps-1 ps-sm-2" placeholder="Search..." aria-label="Search..."> -->
           </div>
         </div>
         <!-- /Search -->
@@ -45,7 +45,7 @@ $navbarDetached = ($navbarDetached ?? '');
 
           <!-- Place this tag where you want the button to render. -->
           <li class="nav-item lh-1 me-3">
-            <a class="github-button" href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-laravel-admin-template-free on GitHub">Star</a>
+            <a data-size="large" data-show-count="true">Binevenido a Sigles, hoy es 24 de mayo del 2024 y son las 23:15 horas.</a>
           </li>
 
           <!-- User -->
