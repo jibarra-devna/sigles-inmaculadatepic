@@ -45,7 +45,21 @@ $navbarDetached = ($navbarDetached ?? '');
 
           <!-- Place this tag where you want the button to render. -->
           <li class="nav-item lh-1 me-3">
-            <a data-size="large" data-show-count="true">Binevenido a Sigles, hoy es 24 de mayo del 2024 y son las 23:15 horas.</a>
+            
+       <div id="current_date">
+    <script>
+        function myFunc() {
+        var date = new Date();
+        var now = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var time = now.getHours() + ":" + now.getMinutes();
+        document.getElementById("current_date").innerHTML = "Bienvenido a <b>SIGLESIA</b>, hoy es " + "<b>" + day + "/" + month + "/" + year + "</b>" + " y son las " + "<b>" + time + "</b>" + " horas";
+        }
+        setInterval(myFunc, 10);
+    </script>
+</div>
           </li>
 
           <!-- User -->
