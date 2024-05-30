@@ -38,15 +38,7 @@ $navbarDetached = ($navbarDetached ?? '');
           <div class="nav-item d-flex align-items-center">
             <!-- <i class="bx bx-search fs-4 lh-0"></i> -->
            <!-- <input type="text" class="form-control border-0 shadow-none ps-1 ps-sm-2" placeholder="Search..." aria-label="Search..."> -->
-          </div>
-        </div>
-        <!-- /Search -->
-        <ul class="navbar-nav flex-row align-items-center ms-auto">
-
-          <!-- Place this tag where you want the button to render. -->
-          <li class="nav-item lh-1 me-3">
-            
-       <div id="current_date">
+           <div id="current_date">
     <script>
         function myFunc() {
         var date = new Date();
@@ -60,6 +52,14 @@ $navbarDetached = ($navbarDetached ?? '');
         setInterval(myFunc, 10);
     </script>
 </div>
+          </div>
+        </div>
+        <!-- /Search -->
+        <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+          <!-- Place this tag where you want the button to render. -->
+          <li class="nav-item lh-1 me-3">
+    <!-- Lado derecho de la barra superior, a un costado del perfil -->
           </li>
 
           <!-- User -->

@@ -18,6 +18,7 @@ let config = {
     danger: '#ff3e1d',
     dark: '#233446',
     black: '#000',
+    scolor1: '#16debf',
     white: '#fff',
     cardColor: '#fff',
     bodyBg: '#f5f5f9',

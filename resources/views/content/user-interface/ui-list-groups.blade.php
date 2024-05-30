@@ -161,6 +161,7 @@
             <li class="list-group-item list-group-item-warning">Warning list group item</li>
             <li class="list-group-item list-group-item-info">Info list group item</li>
             <li class="list-group-item list-group-item-dark">Dark list group item</li>
+            <li class="list-group-item list-group-item-scolor1">Dark list group item</li>
           </ul>
         </div>
       </div>
