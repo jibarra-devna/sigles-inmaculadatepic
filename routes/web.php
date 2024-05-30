@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboard\Analytics;
+use App\Http\Controllers\inicio\Inicio;
+use App\Http\Controllers\librosparroquiales\Bautismos;
+use App\Http\Controllers\librosparroquiales\PrimeraComunion;
+use App\Http\Controllers\librosparroquiales\Confirmaciones;
+use App\Http\Controllers\librosparroquiales\Matrimonios;
 use App\Http\Controllers\layouts\WithoutMenu;
 use App\Http\Controllers\layouts\WithoutNavbar;
 use App\Http\Controllers\layouts\Fluid;
@@ -46,6 +51,7 @@ use App\Http\Controllers\tables\Basic as TablesBasic;
 
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
+Route::get('/inicio', [Inicio::class, 'index'])->name('inicio');
 
 // layout
 Route::get('/layouts/without-menu', [WithoutMenu::class, 'index'])->name('layouts-without-menu');
@@ -104,6 +110,10 @@ Route::get('/forms/input-groups', [InputGroups::class, 'index'])->name('forms-in
 // form layouts
 Route::get('/form/layouts-vertical', [VerticalForm::class, 'index'])->name('form-layouts-vertical');
 Route::get('/form/layouts-horizontal', [HorizontalForm::class, 'index'])->name('form-layouts-horizontal');
+Route::get('/librosparroquiales/bautismos', [Bautismos::class, 'index'])->name('bautismos');
+Route::get('/librosparroquiales/primeracomunion', [PrimeraComunion::class, 'index'])->name('primeracomunion');
+Route::get('/librosparroquiales/confirmaciones', [Confirmaciones::class, 'index'])->name('confirmaciones');
+Route::get('/librosparroquiales/matrimonios', [Matrimonios::class, 'index'])->name('matrimonios');
 
 // tables
 Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic');
