@@ -2,7 +2,8 @@
 
   <!-- ! Hide app brand if navbar-full -->
   <div class="app-brand demo">
-    <a href="{{url('/')}}" class="app-brand-link">
+    <!--<a href="{{url('/')}}" class="app-brand-link">-->
+    <a href="\laravel\siglesia-inmaculadatepic\public\inicio" class="app-brand-link">
       <img width="100%" src="{{asset('assets/img/icons/unicons/logo.png')}}">
     </a>
 

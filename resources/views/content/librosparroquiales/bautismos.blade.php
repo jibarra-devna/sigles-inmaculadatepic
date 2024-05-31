@@ -4,13 +4,19 @@
 
 @section('content')
 
-
-    <h4 class="py-3 mb-4"><span class="text-muted fw-light"><a href="\laravel\sigles-inmaculadatepic\public\inicio">Libros Parroquiales</a> / </span> Bautismos</h4>
+  <div style="display:grid;grid-template-columns: 1fr 1fr;grid-gap:1.25rem">
+    <h6><span class="text-muted fw-light"><a href="\laravel\siglesia-inmaculadatepic\public\inicio">Libros Parroquiales</a> / </span> Bautismos</h6>
   
-<a href="/laravel/sigles-inmaculadatepic/public/librosparroquiales/agregarbautismo">
-                  <button" type="button" class="btn btn-sm btn-primary">
-                  <span class="tf-icons bx bx-plus me-1"></span>Añadir bautismo
-                </button></a>
+    <div style="text-align: right;">
+      <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarbautismo">
+      <button type="button" class="btn btn-sm btn-primary" style="justify-content: flex-end;">
+      <span class="tf-icons bx bx-plus me-1"></span>Añadir bautismo
+      </button>
+    </a>
+    </div>
+  </div>
+  <p></p>
+
 
 
 <!-- Basic Bootstrap Table -->

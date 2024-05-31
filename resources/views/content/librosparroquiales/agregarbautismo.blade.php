@@ -3,7 +3,18 @@
 @section('title', 'Agregar Bautismo')
 
 @section('content')
-<h4 class="py-3 mb-4"><span class="text-muted fw-light"><a href="\laravel\sigles-inmaculadatepic\public\inicio">Libros Parroquiales</a> / <a href="\laravel\sigles-inmaculadatepic\public\librosparroquiales\bautismos">Bautismos</a> / </span> Agregar Bautismo</h4>
+<div style="display:grid;grid-template-columns: 1fr 1fr;grid-gap:1.25rem">
+    <h6><span class="text-muted fw-light"><a href="\laravel\siglesia-inmaculadatepic\public\inicio">Libros Parroquiales</a> / <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\bautismos">Bautismos</a> / </span> Agregar Bautismo</h6>
+  
+    <div style="text-align: right;">
+      <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\bautismos">
+      <button type="button" class="btn btn-sm btn-primary" style="justify-content: flex-end;">
+      <span class="tf-icons bx bx-book me-1"></span>Ir al Índice
+      </button>
+    </a>
+    </div>
+  </div>
+  <p></p>
 
 <!-- Basic Layout -->
 <div class="row">

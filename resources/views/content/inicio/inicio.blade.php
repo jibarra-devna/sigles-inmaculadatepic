@@ -20,7 +20,7 @@
   <div class="col-12 col-lg-6 order-2 order-md-3 order-lg-2 mb-4">
     <div class="card">
       <div>
-        <div class="card-title list-group-item list-group-item-secondary">
+        <div class="card-title list-group-item list-group-item-success" style="padding-left: 10px;">
           <div class="icon-card">
             <h5><img height="60px" height="60px" src="{{asset('assets/img/icons/unicons/bautismo-icon2.png')}}"> <b>BAUTISMOS</b></h5>
           </div>
@@ -39,12 +39,12 @@
             <p class="">Gestione todos los bautismos en el Sistema.</p>
               <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
-                <a href="/laravel/sigles-inmaculadatepic/public/librosparroquiales/bautismos">
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\bautismos">
                 <button type="button" class="btn btn-sm btn-primary">
                   <span class="tf-icons bx bx-book me-1"></span>Índice bautismos
                 </button>
               </a>
-                <a href="/laravel/sigles-inmaculadatepic/public/librosparroquiales/agregarbautismo">
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarbautismo">
                   <button" type="button" class="btn btn-sm btn-primary">
                   <span class="tf-icons bx bx-plus me-1"></span>Añadir bautismo
                 </button></a>
