@@ -39,12 +39,15 @@
             <p class="">Gestione todos los bautismos en el Sistema.</p>
               <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
+                <a href="/laravel/sigles-inmaculadatepic/public/librosparroquiales/bautismos">
                 <button type="button" class="btn btn-sm btn-primary">
                   <span class="tf-icons bx bx-book me-1"></span>Índice bautismos
                 </button>
-                <button type="button" class="btn btn-sm btn-primary">
+              </a>
+                <a href="/laravel/sigles-inmaculadatepic/public/librosparroquiales/agregarbautismo">
+                  <button" type="button" class="btn btn-sm btn-primary">
                   <span class="tf-icons bx bx-plus me-1"></span>Añadir bautismo
-                </button>
+                </button></a>
                 <br>
             <br>
               </div>

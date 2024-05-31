@@ -1,20 +1,20 @@
 {
   "menu": [
     {
-      "url": "/",
+      "url": "/inicio",
       "name": "L. Parroquiales",
       "icon": "menu-icon tf-icons bx bx-home-circle",
-      "slug": "dashboard",
+      "slug": "inicio",
       "submenu": [
         {
-          "url": "/",
+          "url": "/inicio",
           "name": "Vista General",
-          "slug": "vistageneral"
+          "slug": "inicio"
         },
         {
           "url": "/librosparroquiales/bautismos",
           "name": "Bautismos",
-          "slug": "bautismos"
+          "slug": "/librosparroquiales/bautismos"
         },
         {
           "url": "/librosparroquiales/primeracomunion",
@@ -56,7 +56,13 @@
           "url": "form/layouts-horizontal",
           "name": "Horizontal Form",
           "slug": "form-layouts-horizontal"
-        }
+        },
+        {
+      "url": "tables/basic",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "name": "Tables",
+      "slug": "tables-basic"
+    }
       ]
     },
     {

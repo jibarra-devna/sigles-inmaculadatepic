@@ -2,11 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboard\Analytics;
+
 use App\Http\Controllers\inicio\Inicio;
+use App\Http\Controllers\librosparroquiales\AgregarBautismo;
+use App\Http\Controllers\librosparroquiales\AgregarPrimeraComunion;
+use App\Http\Controllers\librosparroquiales\AgregarConfirmacion;
+use App\Http\Controllers\librosparroquiales\AgregarMatrimonio;
+
 use App\Http\Controllers\librosparroquiales\Bautismos;
 use App\Http\Controllers\librosparroquiales\PrimeraComunion;
 use App\Http\Controllers\librosparroquiales\Confirmaciones;
 use App\Http\Controllers\librosparroquiales\Matrimonios;
+
 use App\Http\Controllers\layouts\WithoutMenu;
 use App\Http\Controllers\layouts\WithoutNavbar;
 use App\Http\Controllers\layouts\Fluid;
@@ -110,6 +117,13 @@ Route::get('/forms/input-groups', [InputGroups::class, 'index'])->name('forms-in
 // form layouts
 Route::get('/form/layouts-vertical', [VerticalForm::class, 'index'])->name('form-layouts-vertical');
 Route::get('/form/layouts-horizontal', [HorizontalForm::class, 'index'])->name('form-layouts-horizontal');
+
+// paginas oficiales
+Route::get('/librosparroquiales/agregarbautismo', [AgregarBautismo::class, 'index'])->name('bautismos');
+Route::get('/librosparroquiales/agregarprimeracomunion', [AgregarPrimeraComunion::class, 'index'])->name('primeracomunion');
+Route::get('/librosparroquiales/agregarconfirmacion', [AgregarConfirmacion::class, 'index'])->name('confirmaciones');
+Route::get('/librosparroquiales/agregarmatrimonio', [AgregarMatrimonio::class, 'index'])->name('matrimonios');
+
 Route::get('/librosparroquiales/bautismos', [Bautismos::class, 'index'])->name('bautismos');
 Route::get('/librosparroquiales/primeracomunion', [PrimeraComunion::class, 'index'])->name('primeracomunion');
 Route::get('/librosparroquiales/confirmaciones', [Confirmaciones::class, 'index'])->name('confirmaciones');
