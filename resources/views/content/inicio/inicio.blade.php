@@ -20,9 +20,9 @@
   <div class="col-12 col-lg-6 order-2 order-md-3 order-lg-2 mb-4">
     <div class="card">
       <div>
-        <div class="card-title list-group-item list-group-item-success" style="padding-left: 10px;">
+        <div class="card-title list-group-item list-group-item-success">
           <div class="icon-card">
-            <h5><img height="60px" height="60px" src="{{asset('assets/img/icons/unicons/bautismo-icon2.png')}}"> <b>BAUTISMOS</b></h5>
+            <h5><img height="60px" height="60px" src="{{asset('assets/img/icons/unicons/bautismo-icon2.png')}}"> <b style="padding-left: 10px;">BAUTISMOS</b></h5>
           </div>
         </div>
         <div class="row row-bordered g-0">
@@ -77,14 +77,16 @@
             <p class="">Gestione todas las primeras comuniones en el Sistema.</p>
             <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\bautismos">
                 <button type="button" class="btn btn-sm btn-primary">
-                  <span class="tf-icons bx bx-book me-1"></span>Índice comuniones
+                  <span class="tf-icons bx bx-book me-1"></span>Índice Primera Comunión
                 </button>
-                <button type="button" class="btn btn-sm btn-primary">
-                  <span class="tf-icons bx bx-plus me-1"></span>Añadir comunión
-                </button>
+              </a>
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarbautismo">
+                  <button" type="button" class="btn btn-sm btn-primary">
+                  <span class="tf-icons bx bx-plus me-1"></span>Añadir Primera Comunión
+                </button></a>
                 <br>
-            <br>
               </div>
             </div>
           </div>
