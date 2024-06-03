@@ -5,7 +5,7 @@ namespace App\Http\Controllers\librosparroquiales;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class Bautismos extends Controller
+class BautismosController extends Controller
 {
   public function index()
   {

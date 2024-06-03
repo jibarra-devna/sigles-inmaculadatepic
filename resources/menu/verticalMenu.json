@@ -40,6 +40,29 @@
       "url": "cards/basic"
     },
     {
+      "name": "Configuracíon",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "slug": "form-layouts",
+      "submenu": [
+        {
+          "url": "",
+          "name": "Mis datos",
+          "slug": "mis-datos"
+        },
+        {
+          "url": "",
+          "name": "Datos de la parroquia",
+          "slug": "datos-parroquia"
+        },
+        {
+      "url": "gestionarsacerdotes/sacerdotes",
+      "icon": "",
+      "name": "Gestionar parrocos",
+      "slug": "gestion-parrocos"
+    }
+      ]
+    },
+    {
       "menuHeader": "Forms & Tables"
     },
     {
