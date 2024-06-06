@@ -124,19 +124,21 @@ Route::get('/form/layouts-horizontal', [HorizontalForm::class, 'index'])->name('
 
 //librosparroquiales-indice
 Route::get('/librosparroquiales/bautismos', [BautismosController::class, 'index'])->name('bautismos');
-Route::get('/librosparroquiales/primeracomunion', [PrimeraComunion::class, 'index'])->name('primeracomunion');
-Route::get('/librosparroquiales/confirmaciones', [Confirmaciones::class, 'index'])->name('confirmaciones');
-Route::get('/librosparroquiales/matrimonios', [Matrimonios::class, 'index'])->name('matrimonios');
+//Route::get('/librosparroquiales/primeracomunion', [PrimeraComunion::class, 'index'])->name('primeracomunion');
+//Route::get('/librosparroquiales/confirmaciones', [Confirmaciones::class, 'index'])->name('confirmaciones');
+//Route::get('/librosparroquiales/matrimonios', [Matrimonios::class, 'index'])->name('matrimonios');
 
 //librosparroquiales-agregar
 Route::get('/librosparroquiales/agregarbautismo', [AgregarBautismoController::class, 'index'])->name('bautismos');
-Route::get('/librosparroquiales/agregarprimeracomunion', [AgregarPrimeraComunion::class, 'index'])->name('primeracomunion');
-Route::get('/librosparroquiales/agregarconfirmacion', [AgregarConfirmacion::class, 'index'])->name('confirmaciones');
-Route::get('/librosparroquiales/agregarmatrimonio', [AgregarMatrimonio::class, 'index'])->name('matrimonios');
+//Route::get('/librosparroquiales/agregarprimeracomunion', [AgregarPrimeraComunion::class, 'index'])->name('primeracomunion');
+//Route::get('/librosparroquiales/agregarconfirmacion', [AgregarConfirmacion::class, 'index'])->name('confirmaciones');
+//Route::get('/librosparroquiales/agregarmatrimonio', [AgregarMatrimonio::class, 'index'])->name('matrimonios');
 
 //gestionarsacerdotes-indice
 
 Route::get('/gestionarsacerdotes/sacerdotes', [SacerdotesController::class, 'index'])->name('sacerdotes');
+//Route::post('/create', 'SacerdotesController@create');
+Route::resource('parrocos', SacerdotesController::class);
 
 //------------------------ fin paginas oficiales -------------------------------------------------------------
 
