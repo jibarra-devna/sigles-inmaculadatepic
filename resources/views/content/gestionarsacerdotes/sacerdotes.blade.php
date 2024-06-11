@@ -42,8 +42,8 @@
             <div class="dropdown">
               <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1" data-bs-toggle="modal" data-bs-target="#btnEditarSacerdote"></i> Edit</a>
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1" data-bs-toggle="modal" data-bs-target="#btnEliminarSacerdote"></i> Delete</a>
               </div>
             </div>
           </td>
@@ -85,4 +85,62 @@
             </div>
           </div>
 <!-- Fin Modal agregar sacerdote -->
+<!-- Modal editar sacerdotes -->
+<div class="modal fade" id="btnEditarSacerdote" data-bs-backdrop="static" tabindex="-1">
+            <div class="modal-dialog">
+              <form method="post" class="modal-content" action="">
+                @csrf
+                
+                <div class="modal-header">
+                  <h5 class="modal-title" id="backDropModalTitle">Editar Sacerdote</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col mb-3">
+                      <label for="nameBackdrop" class="form-label">Nombre</label>
+                      <input type="text" name="NOMBRE" value="" class="form-control" placeholder="Nombre(s)">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col mb-3">
+                      <label for="nameBackdrop" class="form-label">Apellidos</label>
+                      <input type="text" name="APELLIDOS" class="form-control" placeholder="Apellidos">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="submit" class="btn btn-primary">Editar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+<!-- Fin Modal editar sacerdote -->
+<!-- Modal eliminar sacerdotes -->
+<div class="modal fade" id="btnEliminarSacerdote" data-bs-backdrop="static" tabindex="-1">
+            <div class="modal-dialog">
+              <form method="post" class="modal-content" action="">
+                @csrf
+                
+                <div class="modal-header">
+                  <h5 class="modal-title" id="backDropModalTitle">Eliminar Sacerdote</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col mb-3">
+                        <br>
+                      <h5>Esta seguro que desea eliminar ...</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="submit" class="btn btn-primary">Eliminar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+<!-- Fin Modal eliminar sacerdote -->
 @endsection

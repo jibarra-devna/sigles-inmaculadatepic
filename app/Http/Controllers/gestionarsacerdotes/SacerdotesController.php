@@ -25,4 +25,8 @@ class SacerdotesController extends Controller
 
    return redirect()->route('parrocos.index');
   }
+
+  public function edit(){
+    //$parroco = Sacerdotes::findOrFail($ID_SACERDOTE);
+  }
 }
