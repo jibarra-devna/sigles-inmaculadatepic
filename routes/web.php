@@ -131,9 +131,9 @@ Route::get('/librosparroquiales/matrimonios', [MatrimoniosController::class, 'in
 
 //librosparroquiales-agregar
 Route::get('/librosparroquiales/agregarbautismo', [AgregarBautismoController::class, 'index'])->name('agregarbautismo');
-//Route::get('/librosparroquiales/agregarprimeracomunion', [AgregarPrimeraComunion::class, 'index'])->name('primeracomunion');
-//Route::get('/librosparroquiales/agregarconfirmacion', [AgregarConfirmacion::class, 'index'])->name('confirmaciones');
-//Route::get('/librosparroquiales/agregarmatrimonio', [AgregarMatrimonio::class, 'index'])->name('matrimonios');
+Route::get('/librosparroquiales/agregarprimeracomunion', [AgregarPrimeraComunionController::class, 'index'])->name('agregarprimeracomunion');
+Route::get('/librosparroquiales/agregarconfirmacion', [AgregarConfirmacionController::class, 'index'])->name('agregarconfirmacion');
+Route::get('/librosparroquiales/agregarmatrimonio', [AgregarMatrimonioController::class, 'index'])->name('agregarmatrimonio');
 
 //gestionarsacerdotes-indice
 
