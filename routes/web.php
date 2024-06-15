@@ -58,6 +58,7 @@ use App\Http\Controllers\form_layouts\VerticalForm;
 use App\Http\Controllers\form_layouts\HorizontalForm;
 use App\Http\Controllers\tables\Basic as TablesBasic;
 
+
 // Main Page Route
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
 Route::get('/inicio', [Inicio::class, 'index'])->name('inicio');
@@ -129,7 +130,7 @@ Route::get('/librosparroquiales/bautismos', [BautismosController::class, 'index'
 //Route::get('/librosparroquiales/matrimonios', [Matrimonios::class, 'index'])->name('matrimonios');
 
 //librosparroquiales-agregar
-Route::get('/librosparroquiales/agregarbautismo', [AgregarBautismoController::class, 'index'])->name('bautismos');
+Route::get('/librosparroquiales/agregarbautismo', [AgregarBautismoController::class, 'index'])->name('agregarbautismo');
 //Route::get('/librosparroquiales/agregarprimeracomunion', [AgregarPrimeraComunion::class, 'index'])->name('primeracomunion');
 //Route::get('/librosparroquiales/agregarconfirmacion', [AgregarConfirmacion::class, 'index'])->name('confirmaciones');
 //Route::get('/librosparroquiales/agregarmatrimonio', [AgregarMatrimonio::class, 'index'])->name('matrimonios');
@@ -139,6 +140,9 @@ Route::get('/librosparroquiales/agregarbautismo', [AgregarBautismoController::cl
 Route::get('/gestionarsacerdotes/sacerdotes', [SacerdotesController::class, 'index'])->name('sacerdotes');
 //Route::post('/create', 'SacerdotesController@create');
 Route::resource('parrocos', SacerdotesController::class);
+//Route::get('parroco/edit/{id}', [SacerdotesController::class, 'edit'])->name('parroco.edit');
+Route::get('/edit/parroco',[SacerdotesController::class,'edit'])->name('edit');
+Route::delete('parroco/eliminar/{id}',[SacerdotesController::class,'delete'])->name('delete');
 
 //------------------------ fin paginas oficiales -------------------------------------------------------------
 
