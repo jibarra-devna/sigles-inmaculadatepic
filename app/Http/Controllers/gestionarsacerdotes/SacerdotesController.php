@@ -39,7 +39,7 @@ class SacerdotesController extends Controller
    public function delete($id){
 
     $eliminar_parroco = Sacerdotes::where('ID_SACERDOTE', $id)->delete();
-
+    //elimina los datos
     return response()->json(["success"=>true],200); 
     }
 }

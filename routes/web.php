@@ -138,9 +138,7 @@ Route::get('/librosparroquiales/agregarbautismo', [AgregarBautismoController::cl
 //gestionarsacerdotes-indice
 
 Route::get('/gestionarsacerdotes/sacerdotes', [SacerdotesController::class, 'index'])->name('sacerdotes');
-//Route::post('/create', 'SacerdotesController@create');
 Route::resource('parrocos', SacerdotesController::class);
-//Route::get('parroco/edit/{id}', [SacerdotesController::class, 'edit'])->name('parroco.edit');
 Route::get('/edit/parroco',[SacerdotesController::class,'edit'])->name('edit');
 Route::delete('parroco/eliminar/{id}',[SacerdotesController::class,'delete'])->name('delete');
 

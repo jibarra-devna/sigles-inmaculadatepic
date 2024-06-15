@@ -203,55 +203,5 @@
 
         });
 
-          /* $('.deleteBtn').on('click',function(){
-                var eliminar_name = $(this).attr('data-name');
-                 var parroco_id = $(this).attr('data-id');
-                // delete any car name
-                $('.name_eliminar').html('');
-                // then add the new one..
-                $('.name_eliminar').html(eliminar_name);
-                $('#id_eliminar').val(parroco_id);
-            });
-
-
-            $('.deleteButton').on('click',function(){
-                var id_eliminar = $(this).attr('data-id');
-                var url = "";
-                url = url.replace('id_eliminar',id_eliminar);
-
-                $.ajax({
-                    url: url,
-                    type: 'GET',
-                    contentType: false,
-                    processData:false,
-                    beforeSend:function(){
-                        $('.deleteButton').prop('disabled', true);
-                    },
-                    complete: function(){
-                        $('.deleteButton').prop('disabled', false);
-                    },
-                    success: function(data){
-                            $('#deleteModal').modal('hide');
-                            location.reload();
-                    }
-                });
-
-            }); 
-
-             function confirmDelete(id) {
-        alertify.confirm("¿Seguro que desea eliminar?",
-        function(){
-            let form = document.createElement('form');
-                    form.method = 'POST';
-                    form.action = 'parrocos/' + id;
-                    form.innerHTML = '@csrf @method("DELETE")';
-                    document.body.appendChild(form);
-                    form.submit();
-            alertify.success('Ok');
-        },
-        function(){
-            alertify.error('Cancelado');
-        });
-    } */
 </script>
 @endsection
