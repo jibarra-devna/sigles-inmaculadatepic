@@ -77,12 +77,12 @@
             <p class="">Gestione todas las primeras comuniones en el Sistema.</p>
             <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
-                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\bautismos">
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\primeracomunion">
                 <button type="button" class="btn btn-sm btn-primary">
                   <span class="tf-icons bx bx-book me-1"></span>Índice Primera Comunión
                 </button>
               </a>
-                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarbautismo">
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarprimeracomunion">
                   <button" type="button" class="btn btn-sm btn-primary">
                   <span class="tf-icons bx bx-plus me-1"></span>Añadir Primera Comunión
                 </button></a>
@@ -118,12 +118,15 @@
             <p class="">Gestione todas las confirmaciones en el Sistema.</p>
             <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\confirmaciones">
                 <button type="button" class="btn btn-sm btn-primary">
-                  <span class="tf-icons bx bx-book me-1"></span>Índice confirmaciones
+                  <span class="tf-icons bx bx-book me-1"></span>Índice Confirmaciones
                 </button>
-                <button type="button" class="btn btn-sm btn-primary">
-                  <span class="tf-icons bx bx-plus me-1"></span>Añadir confirmación
-                </button>
+              </a>
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarconfirmacion">
+                  <button" type="button" class="btn btn-sm btn-primary">
+                  <span class="tf-icons bx bx-plus me-1"></span>Añadir Confirmación
+                </button></a>
                 <br>
             <br>
               </div>
@@ -155,12 +158,15 @@
             <p class="">Gestione todos los matrimonios en el Sistema.</p>
             <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\matrimonios">
                 <button type="button" class="btn btn-sm btn-primary">
-                  <span class="tf-icons bx bx-book me-1"></span>Índice matrimonios
+                  <span class="tf-icons bx bx-book me-1"></span>Índice Matrimonios
                 </button>
-                <button type="button" class="btn btn-sm btn-primary">
-                  <span class="tf-icons bx bx-plus me-1"></span>Añadir matrimonio
-                </button>
+              </a>
+                <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarmatrimonio">
+                  <button" type="button" class="btn btn-sm btn-primary">
+                  <span class="tf-icons bx bx-plus me-1"></span>Añadir Matrimonio
+                </button></a>
                 <br>
             <br>
               </div>

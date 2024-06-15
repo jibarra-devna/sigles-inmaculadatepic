@@ -5,14 +5,14 @@ use App\Http\Controllers\dashboard\Analytics;
 
 use App\Http\Controllers\inicio\Inicio;
 use App\Http\Controllers\librosparroquiales\AgregarBautismoController;
-use App\Http\Controllers\librosparroquiales\AgregarPrimeraComunion;
-use App\Http\Controllers\librosparroquiales\AgregarConfirmacion;
-use App\Http\Controllers\librosparroquiales\AgregarMatrimonio;
+use App\Http\Controllers\librosparroquiales\AgregarPrimeraComunionController;
+use App\Http\Controllers\librosparroquiales\AgregarConfirmacionController;
+use App\Http\Controllers\librosparroquiales\AgregarMatrimonioController;
 
 use App\Http\Controllers\librosparroquiales\BautismosController;
-use App\Http\Controllers\librosparroquiales\PrimeraComunion;
-use App\Http\Controllers\librosparroquiales\Confirmaciones;
-use App\Http\Controllers\librosparroquiales\Matrimonios;
+use App\Http\Controllers\librosparroquiales\PrimeraComunionController;
+use App\Http\Controllers\librosparroquiales\ConfirmacionesController;
+use App\Http\Controllers\librosparroquiales\MatrimoniosController;
 
 use App\Http\Controllers\gestionarsacerdotes\SacerdotesController;
 
@@ -125,9 +125,9 @@ Route::get('/form/layouts-horizontal', [HorizontalForm::class, 'index'])->name('
 
 //librosparroquiales-indice
 Route::get('/librosparroquiales/bautismos', [BautismosController::class, 'index'])->name('bautismos');
-//Route::get('/librosparroquiales/primeracomunion', [PrimeraComunion::class, 'index'])->name('primeracomunion');
-//Route::get('/librosparroquiales/confirmaciones', [Confirmaciones::class, 'index'])->name('confirmaciones');
-//Route::get('/librosparroquiales/matrimonios', [Matrimonios::class, 'index'])->name('matrimonios');
+Route::get('/librosparroquiales/primeracomunion', [PrimeraComunionController::class, 'index'])->name('primeracomunion');
+Route::get('/librosparroquiales/confirmaciones', [ConfirmacionesController::class, 'index'])->name('confirmaciones');
+Route::get('/librosparroquiales/matrimonios', [MatrimoniosController::class, 'index'])->name('matrimonios');
 
 //librosparroquiales-agregar
 Route::get('/librosparroquiales/agregarbautismo', [AgregarBautismoController::class, 'index'])->name('agregarbautismo');
