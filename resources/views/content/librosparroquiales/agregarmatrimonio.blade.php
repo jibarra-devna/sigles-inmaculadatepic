@@ -36,13 +36,15 @@
             <label class="form-label" for="basic-default-fullname">Apellidos</label>
             <input type="text" class="form-control" id="apellido"/>
           </div>
-          <div>
+          <div class="row">
+          <div class="col-6">
             <label class="form-label" for="basic-default-company">Fecha de Bautismo</label>
             <input type="date" class="form-control" id="basic-default-company" placeholder="" />
           </div>
-          <div>
+          <div class="col-6">
             <label class="form-label" for="basic-default-company">Hora de Bautismo</label>
             <input type="time" class="form-control" id="basic-default-company" placeholder="" />
+          </div>
           </div>
           <div>
             <label class="form-label" for="basic-default-fullname">Ministro de Bautismo</label>
@@ -56,17 +58,19 @@
             <label class="form-label" for="basic-default-fullname">Parroquia</label>
             <input type="text" class="form-control" id="nombre" value="Inmaculada Concepción de Tepic" disabled/></td>
           </div>
-          <div>
-            <label class="form-label" for="basic-default-fullname">Año</label>
-            <input type="text" class="form-control" id="nombre"/>
-          </div>
-          <div>
-            <label class="form-label" for="basic-default-fullname">Libro</label>
-            <input type="text" class="form-control" id="nombre"/></td>
-          </div>
-          <div>
-            <label class="form-label" for="basic-default-fullname">Página</label>
-            <input type="text" class="form-control" id="nombre"/></td>
+          <div class="row">
+            <div class="col-4">
+              <label class="form-label" for="basic-default-fullname">Año</label>
+              <input type="text" class="form-control" id="nombre"/>
+            </div>
+            <div class="col-4">
+              <label class="form-label" for="basic-default-fullname">Libro</label>
+              <input type="text" class="form-control" id="nombre"/></td>
+            </div>
+            <div class="col-4">
+              <label class="form-label" for="basic-default-fullname">Página</label>
+              <input type="text" class="form-control" id="nombre"/></td>
+            </div>
           </div>
           <div>
             <label class="form-label" for="basic-default-fullname">Diócesis</label>
@@ -88,17 +92,19 @@
         <br>
         <h5><span style="color: #696cff; vertical-align:2px;">━━━━</span>&nbsp;&nbsp;&nbsp;&nbsp;<b>Datos del Registro Civil</b></h5>
         <div style="display:grid;grid-template-columns: 1fr 1fr;grid-gap:1.25rem">
-          <div>
-            <label class="form-label" for="basic-default-fullname">Acta</label>
-            <input type="text" class="form-control" id="nombre"/>
-          </div>
-          <div>
-            <label class="form-label" for="basic-default-fullname">Oficialia</label>
-            <input type="text" class="form-control" id="nombre"/>
-          </div>
-          <div>
-            <label class="form-label" for="basic-default-fullname">Libro</label>
-            <input type="text" class="form-control" id="nombre"/>
+          <div class="row">
+            <div class="col-4">
+              <label class="form-label" for="basic-default-fullname">Acta</label>
+              <input type="text" class="form-control" id="nombre"/>
+            </div>
+            <div class="col-4">
+              <label class="form-label" for="basic-default-fullname">Oficialia</label>
+              <input type="text" class="form-control" id="nombre"/>
+            </div>
+            <div class="col-4">
+              <label class="form-label" for="basic-default-fullname">Libro</label>
+              <input type="text" class="form-control" id="nombre"/>
+            </div>
           </div>
           <div>
             <label class="form-label" for="basic-default-fullname">Fecha</label>

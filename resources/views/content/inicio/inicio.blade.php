@@ -37,19 +37,20 @@
           <div class="col-md-9 card-header">
             <h5 class=""><strong>Libro de Bautismos</strong></h5>
             <p class="">Gestione todos los bautismos en el Sistema.</p>
-              <div class="col-md-12 col-lg-12">
+              <div class="row">
               <div class="demo-inline-spacing">
                 <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\bautismos">
-                <button type="button" class="btn btn-sm btn-primary">
-                  <span class="tf-icons bx bx-book me-1"></span>Índice bautismos
-                </button>
-              </a>
+                  <button type="button" class="btn btn-sm btn-primary mb-2">
+                    <span class="tf-icons bx bx-book me-1"></span>Índice bautismos
+                 </button>
+                </a>      
                 <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarbautismo">
-                  <button" type="button" class="btn btn-sm btn-primary">
+                  <button" type="button" class="btn btn-sm btn-primary mb-2">
                   <span class="tf-icons bx bx-plus me-1"></span>Añadir bautismo
                 </button></a>
                 <br>
-            <br>
+                <br>
+                <br>
               </div>
             </div>
           </div>
@@ -78,14 +79,16 @@
             <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
                 <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\primeracomunion">
-                <button type="button" class="btn btn-sm btn-primary">
+                <button type="button" class="btn btn-sm btn-primary mb-2">
                   <span class="tf-icons bx bx-book me-1"></span>Índice Primera Comunión
                 </button>
               </a>
                 <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarprimeracomunion">
-                  <button" type="button" class="btn btn-sm btn-primary">
+                  <button" type="button" class="btn btn-sm btn-primary mb-2">
                   <span class="tf-icons bx bx-plus me-1"></span>Añadir Primera Comunión
                 </button></a>
+                <br>
+                <br>
                 <br>
               </div>
             </div>
@@ -119,16 +122,17 @@
             <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
                 <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\confirmaciones">
-                <button type="button" class="btn btn-sm btn-primary">
+                <button type="button" class="btn btn-sm btn-primary mb-2">
                   <span class="tf-icons bx bx-book me-1"></span>Índice Confirmaciones
                 </button>
               </a>
                 <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarconfirmacion">
-                  <button" type="button" class="btn btn-sm btn-primary">
+                  <button" type="button" class="btn btn-sm btn-primary mb-2">
                   <span class="tf-icons bx bx-plus me-1"></span>Añadir Confirmación
                 </button></a>
                 <br>
-            <br>
+                <br>
+                <br>
               </div>
             </div>
           </div>
@@ -159,14 +163,15 @@
             <div class="col-md-12 col-lg-12">
               <div class="demo-inline-spacing">
                 <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\matrimonios">
-                <button type="button" class="btn btn-sm btn-primary">
+                <button type="button" class="btn btn-sm btn-primary mb-2">
                   <span class="tf-icons bx bx-book me-1"></span>Índice Matrimonios
                 </button>
               </a>
                 <a href="\laravel\siglesia-inmaculadatepic\public\librosparroquiales\agregarmatrimonio">
-                  <button" type="button" class="btn btn-sm btn-primary">
+                  <button" type="button" class="btn btn-sm btn-primary mb-2">
                   <span class="tf-icons bx bx-plus me-1"></span>Añadir Matrimonio
                 </button></a>
+                <br>
                 <br>
             <br>
               </div>
