@@ -60,6 +60,14 @@ use App\Http\Controllers\tables\Basic as TablesBasic;
 
 
 // Main Page Route
+Route::get('/iniciarsesion', [LoginBasic::class, 'showLoginForm'])->name('login');
+Route::post('iniciarsesion', [LoginBasic::class, 'login']);
+
+Route::middleware('auth')->group(function () {
+
+
+Route::post('/logout', [LoginBasic::class, 'logout'])->name('logout');
+
 Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
 Route::get('/inicio', [Inicio::class, 'index'])->name('inicio');
 
@@ -78,9 +86,16 @@ Route::get('/pages/misc-error', [MiscError::class, 'index'])->name('pages-misc-e
 Route::get('/pages/misc-under-maintenance', [MiscUnderMaintenance::class, 'index'])->name('pages-misc-under-maintenance');
 
 // authentication
-Route::get('/auth/login-basic', [LoginBasic::class, 'index'])->name('auth-login-basic');
+//Route::get('/auth/login-basic', [LoginBasic::class, 'index'])->name('auth-login-basic');
 Route::get('/auth/register-basic', [RegisterBasic::class, 'index'])->name('auth-register-basic');
 Route::get('/auth/forgot-password-basic', [ForgotPasswordBasic::class, 'index'])->name('auth-reset-password-basic');
+
+// auth v2
+//use App\Http\Controllers\authentications\LoginBasic;
+
+// Rutas para el login y logout
+
+
 
 // cards
 Route::get('/cards/basic', [CardBasic::class, 'index'])->name('cards-basic');
@@ -147,3 +162,5 @@ Route::delete('parroco/eliminar/{id}',[SacerdotesController::class,'delete'])->n
 
 // tables
 Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic');
+
+});

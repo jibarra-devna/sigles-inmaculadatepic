@@ -119,7 +119,7 @@
       "slug": "auth",
       "submenu": [
         {
-          "url": "auth/login-basic",
+          "url": "iniciarsesion",
           "name": "Login",
           "slug": "auth-login-basic",
           "target": "_blank"
