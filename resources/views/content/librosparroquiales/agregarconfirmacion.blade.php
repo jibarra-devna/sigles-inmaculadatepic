@@ -36,25 +36,29 @@
             <label class="form-label">Apellidos</label>
             <input type="text" class="form-control" name="co-apellido" id="co-apellido"/>
           </div>
-          <div>
+          <div class="row">
+          <div class="col-6">
             <label class="form-label">Fecha de Confirmación</label>
             <input type="date" class="form-control" name="co-fechaconfirmacion" id="co-fechaconfirmacion"/>
           </div>
-          <div>
+          <div class="col-6">
             <label class="form-label">Hora de Confirmación</label>
             <input type="time" class="form-control" name="co-horaconfirmacion" id="co-horaconfirmacion"/>
           </div>
-          <div>
+          </div>
+          <div class="row">
+          <div class="col-4">
             <label class="form-label">Libro</label>
             <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-libro" id="co-libro"/>
           </div>
-          <div>
+          <div class="col-4">
             <label class="form-label">Página</label>
             <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-pagina" id="co-pagina"/>
           </div>
-          <div>
+          <div class="col-4">
             <label class="form-label">Acta</label>
             <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-acta" id="co-acta"/>
+          </div>
           </div>
           <div>
             <label class="form-label">Grupo de Confirmación</label>
@@ -144,17 +148,19 @@
               <option value="Zacatecas">Zacatecas</option>
             </select>
           </div>
-          <div>
-            <label class="form-label">Libro</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-ba-libro" id="co-ba-libro"/>
-          </div>
-          <div>
-            <label class="form-label">Página</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-ba-pagina" id="co-ba-pagina"/>
-          </div>
-          <div>
-            <label class="form-label">Acta</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-ba-acta" id="co-ba-acta"/>
+          <div class="row">
+            <div class="col-4">
+              <label class="form-label">Libro</label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-ba-libro" id="co-ba-libro"/>
+            </div>
+            <div class="col-4">
+              <label class="form-label">Página</label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-ba-pagina" id="co-ba-pagina"/>
+            </div>
+            <div class="col-4">
+              <label class="form-label">Acta</label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="co-ba-acta" id="co-ba-acta"/>
+            </div>
           </div>
           <div>
             <label class="form-label">Diócesis</label>

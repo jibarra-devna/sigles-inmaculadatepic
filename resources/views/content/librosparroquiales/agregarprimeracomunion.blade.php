@@ -27,76 +27,79 @@
             <h5><span style="color: #696cff; vertical-align:2px;">━━━━</span>&nbsp;&nbsp;&nbsp;&nbsp;<b>Datos del Catecúmeno</b></h5> <!--<small class="text-muted float-end">Default label</small>-->
           </div>
           <div style="display:grid;grid-template-columns: 1fr 1fr;grid-gap:1.25rem">
-
-          <div>
-            <label class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="pc-nombre" id="pc-nombre"/>
-          </div>
-          <div>
-            <label class="form-label">Apellidos</label>
-            <input type="text" class="form-control" name="pc-apellido" id="pc-apellido"/>
-          </div>
-          <div>
-            <label class="form-label">Fecha de Primera Comunión</label>
-            <input type="date" class="form-control" name="pc-fechacomunion" id="pc-fechacomunion"/>
-          </div>
-          <div>
-            <label class="form-label">Hora de Primera Comunión</label>
-            <input type="time" class="form-control" name="pc-horacomunion" id="pc-horacomunion"/>
-          </div>
-          <div>
-            <label class="form-label">Libro</label>
-            <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-libro" id="pc-libro"/>
-          </div>
-          <div>
-            <label class="form-label">Página</label>
-            <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-pagina" id="pc-pagina"/>
-          </div>
-          <div>
-            <label class="form-label">Acta</label>
-            <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-acta" id="pc-acta"/>
-          </div>
-          <div>
-            <label class="form-label">Catequista</label>
-            <input type="text" class="form-control" name="pc-catequista" id="pc-catequista"/>
-          </div>
-          <div>
-            <label class="form-label">Celebrante</label>
-            <select type="text" class="form-control" name="pc-celebrante" id="pc-celebrante"/>
-              <option value="">Seleccione uno ↓</option>
-              <option value="dog">Pbro. Cristian Alejandro Conchas Mayorquín</option>
-              <option value="dog">Pbro. Bernardo Becerra Gómez</option>
-            </select>
-          </div>
-          <div>
-            <label class="form-label" for="basic-default-fullname">Como cura certifica</label>
-            <select type="text" class="form-control" name="pc-cura" id="pc-cura"/>
-              <option value="">Seleccione uno ↓</option>
-              <option value="dog">Pbro. Cristian Alejandro Conchas Mayorquín</option>
-              <option value="dog">Pbro. Bernardo Becerra Gómez</option>
-            </select>
-          </div>
-          <div>
-            <label class="form-label" for="basic-default-message">Notas marginales</label>
-            <textarea class="form-control" name="pc-notasmarginales" id="pc-notasmarginales"></textarea>
-          </div>
+            <div>
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" name="pc-nombre" id="pc-nombre"/>
+            </div>
+            <div>
+              <label class="form-label">Apellidos</label>
+              <input type="text" class="form-control" name="pc-apellido" id="pc-apellido"/>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label class="form-label">Fecha de Primera Comunión</label>
+                <input type="date" class="form-control" name="pc-fechacomunion" id="pc-fechacomunion"/>
+              </div>
+              <div class="col-6">
+                <label class="form-label">Hora de Primera Comunión</label>
+                <input type="time" class="form-control" name="pc-horacomunion" id="pc-horacomunion"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label class="form-label">Libro</label>
+                <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-libro" id="pc-libro"/>
+              </div>
+              <div class="col-4">
+                <label class="form-label">Página</label>
+                <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-pagina" id="pc-pagina"/>
+              </div>
+              <div class="col-4">
+                <label class="form-label">Acta</label>
+                <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-acta" id="pc-acta"/>
+              </div>
+            </div>
+            <div>
+              <label class="form-label">Catequista</label>
+              <input type="text" class="form-control" name="pc-catequista" id="pc-catequista"/>
+            </div>
+            <div>
+              <label class="form-label">Celebrante</label>
+              <select type="text" class="form-control" name="pc-celebrante" id="pc-celebrante"/>
+                <option value="">Seleccione uno ↓</option>
+                <option value="dog">Pbro. Cristian Alejandro Conchas Mayorquín</option>
+                <option value="dog">Pbro. Bernardo Becerra Gómez</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label" for="basic-default-fullname">Como cura certifica</label>
+              <select type="text" class="form-control" name="pc-cura" id="pc-cura"/>
+                <option value="">Seleccione uno ↓</option>
+                <option value="dog">Pbro. Cristian Alejandro Conchas Mayorquín</option>
+                <option value="dog">Pbro. Bernardo Becerra Gómez</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label" for="basic-default-message">Notas marginales</label>
+              <textarea class="form-control" name="pc-notasmarginales" id="pc-notasmarginales"></textarea>
+            </div>
         </div>
         <br>
         <h5><span style="color: #696cff; vertical-align:2px;">━━━━</span>&nbsp;&nbsp;&nbsp;&nbsp;<b>Datos del Bautismo</b></h5>
         <div style="display:grid;grid-template-columns: 1fr 1fr;grid-gap:1.25rem">
           <div>
             <label class="form-label">Bautizado en la Parroquia</label>
-          <div class="input-group">
-            <select type="text" class="form-control" name="pc-ba-parroquia" id="pc-ba-parroquia"/>
-              <option value="">Seleccione uno ↓</option>
-              <option value="dog">Inmaculada Concepción de Tepic</option>
-              <option value="dog">San Isidro Labrador de Tepic</option>
-            </select>
-            &nbsp;
-          <div>
-            <button class="btn btn-outline-secondary" type="button"><span class="bx bx-plus"></button>
-          </div>
-          </div>
+            <div class="input-group">
+              <select type="text" class="form-control" name="pc-ba-parroquia" id="pc-ba-parroquia"/>
+                <option value="">Seleccione uno ↓</option>
+                <option value="dog">Inmaculada Concepción de Tepic</option>
+                <option value="dog">San Isidro Labrador de Tepic</option>
+              </select>
+              &nbsp;
+              <div>
+                <button class="btn btn-outline-secondary" type="button"><span class="bx bx-plus"></button>
+              </div>
+            </div>
           </div>
           <div>
             <label class="form-label">Fecha de Bautismo</label>
@@ -144,17 +147,19 @@
               <option value="Zacatecas">Zacatecas</option>
             </select>
           </div>
-          <div>
-            <label class="form-label">Libro</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-ba-libro" id="pc-ba-libro"/>
-          </div>
-          <div>
-            <label class="form-label">Página</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-ba-pagina" id="pc-ba-pagina"/>
-          </div>
-          <div>
-            <label class="form-label">Acta</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-ba-acta" id="pc-ba-acta"/>
+          <div class="row">
+            <div class="col-4">
+              <label class="form-label">Libro</label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-ba-libro" id="pc-ba-libro"/>
+            </div>
+            <div class="col-4">
+              <label class="form-label">Página</label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-ba-pagina" id="pc-ba-pagina"/>
+            </div>
+            <div class="col-4">
+              <label class="form-label">Acta</label>
+              <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="pc-ba-acta" id="pc-ba-acta"/>
+            </div>
           </div>
           <div>
             <label class="form-label">Fecha de nacimiento</label>
@@ -162,15 +167,17 @@
           </div>
           <div>
             <label class="form-label">Diócesis</label>
-          <div class="input-group">
-            <select type="text" class="form-control" name="pc-ba-diocesis" id="pc-ba-diocesis"/>
-              <option value="">Seleccione uno ↓</option>
-              <option value="dog">Diócesis de Tepic</option>
-              <option value="dog">Diócesis de Autlán</option>
-            </select>
-            &nbsp;
-          <div>
-            <button class="btn btn-outline-secondary" type="button"><span class="bx bx-plus"></button>
+            <div class="input-group">
+              <select type="text" class="form-control" name="pc-ba-diocesis" id="pc-ba-diocesis"/>
+                <option value="">Seleccione uno ↓</option>
+                <option value="dog">Diócesis de Tepic</option>
+                <option value="dog">Diócesis de Autlán</option>
+              </select>
+              &nbsp;
+              <div>
+                <button class="btn btn-outline-secondary" type="button"><span class="bx bx-plus"></button>
+            </div>
+            </div>
           </div>
         </div>
         <br>

@@ -56,17 +56,19 @@
             <label class="form-label">Parroquia</label>
             <input type="text" class="form-control" name="ba-parroquia" id="ba-parroquia" value="Inmaculada Concepción de Tepic" disabled/></td>
           </div>
-          <div>
+          <div class="row"> 
+          <div class="col-4">
             <label class="form-label">Libro</label>
             <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-libro" id="ba-libro"/>
           </div>
-          <div>
+          <div class="col-4">
             <label class="form-label">Página</label>
             <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-pagina" id="ba-pagina"/></td>
           </div>
-          <div>
+          <div class="col-4">
             <label class="form-label">Acta</label>
             <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-acta" id="ba-acta"/></td>
+          </div>
           </div>
           <div>
             <label class="form-label">Diócesis</label>
@@ -98,9 +100,36 @@
         <br>
         <h5><span style="color: #696cff; vertical-align:2px;">━━━━</span>&nbsp;&nbsp;&nbsp;&nbsp;<b>Datos del Registro Civil</b></h5>
         <div style="display:grid;grid-template-columns: 1fr 1fr;grid-gap:1.25rem">
-          <div>
+        <div class="row">  
+          <div class="col-6">
             <label class="form-label">Fecha de nacimiento</label>
             <input type="date" class="form-control" name="ba-rc-fecha" id="ba-rc-fecha"/>
+          </div>
+          <div class="col-6">
+            <small class="form-label">Sexo</small>
+            <div class="mt-2">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="ba-rc-sexo" id="ba-rc-sexoh">
+                <label class="btn btn-outline-secondary" for="ba-rc-sexoh">Hombre</label>
+                <input type="radio" class="btn-check" name="ba-rc-sexo" id="ba-rc-sexom">
+                <label class="btn btn-outline-secondary" for="ba-rc-sexom">Mujer</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label class="form-label">Oficialia</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-rc-oficialia" id="ba-rc-oficialia"/>
+          </div>
+          <div class="col-4">
+            <label class="form-label">Libro</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-rc-libro" id="ba-rc-libro"/>
+          </div>
+          <div class="col-4">
+            <label class="form-label">Acta</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-rc-acta" id="ba-rc-acta"/>
+          </div>
           </div>
           <div>
             <label class="form-label">Lugar de nacimiento</label>
@@ -143,29 +172,6 @@
               <option value="Yucatán">Yucatán</option>
               <option value="Zacatecas">Zacatecas</option>
             </select>
-          </div>
-          <div>
-            <label class="form-label">Oficialia</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-rc-oficialia" id="ba-rc-oficialia"/>
-          </div>
-          <div>
-            <label class="form-label">Libro</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-rc-libro" id="ba-rc-libro"/>
-          </div>
-          <div>
-            <label class="form-label">Acta</label>
-            <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" name="ba-rc-acta" id="ba-rc-acta"/>
-          </div>
-          <div class="col-md-6">
-            <small class="form-label">Sexo</small>
-            <div class="mt-3">
-              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="ba-rc-sexo" id="ba-rc-sexoh">
-                <label class="btn btn-outline-secondary" for="ba-rc-sexoh">Hombre</label>
-                <input type="radio" class="btn-check" name="ba-rc-sexo" id="ba-rc-sexom">
-                <label class="btn btn-outline-secondary" for="ba-rc-sexom">Mujer</label>
-              </div>
-            </div>
           </div>
           <div>
             <label class="form-label" for="basic-default-fullname">Municipio</label>
