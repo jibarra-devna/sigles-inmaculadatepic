@@ -45,7 +45,7 @@
             <input type="time" class="form-control" name="ba-hora" id="ba-hora"/>
           </div>
           <div>
-            <label class="form-label">Ministro de Bautismo</label>
+            <label class="form-label">Celebrante</label>
             <select type="text" class="form-control" name="ba-ministro" id="ba-ministro"/>
               <option value="">Seleccione uno ↓</option>
               <option value="dog">Pbro. Cristian Alejandro Conchas Mayorquín</option>

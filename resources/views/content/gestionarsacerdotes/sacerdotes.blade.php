@@ -47,7 +47,7 @@
           <th>Actions</th>
         </tr>
       </thead>
-      <tbody class="table-border-bottom-0">
+      <tbody>
         @foreach ($tsacerdotes as $sacerdote)
         <tr>
           <td>{{ $sacerdote->nombre_sacerdote }} {{ $sacerdote->apellidos_sacerdote }}</td>

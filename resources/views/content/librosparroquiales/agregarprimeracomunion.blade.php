@@ -163,7 +163,7 @@
           </div>
           <div>
             <label class="form-label">Fecha de nacimiento</label>
-            <input type="date" class="form-control" id="pc-ba-fechanac"/>
+            <input type="date" class="form-control" name="pc-ba-fechanac" id="pc-ba-fechanac"/>
           </div>
           <div>
             <label class="form-label">Diócesis</label>

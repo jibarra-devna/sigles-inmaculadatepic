@@ -163,6 +163,10 @@
             </div>
           </div>
           <div>
+            <label class="form-label" for="basic-default-fullname">Fecha de nacimiento</label>
+            <input type="date" class="form-control" name="co-ba-fechanac" id="co-ba-fechanac"/>
+          </div>
+          <div>
             <label class="form-label">Diócesis</label>
           <div class="input-group">
             <select type="text" class="form-control" name="co-ba-diocesis" id="co-ba-diocesis"/>
